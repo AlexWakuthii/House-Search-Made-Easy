@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+/* Global Styles */
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    /* line-height: 64px; */
+    color: #222;
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+
+/* Header Starts here */
+#header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: -10px 60px;
+        background: white;
+       /* background-image: url(img/Sampleimgs/black\ banner.jpg); */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 14px;
+    /* position: relative; */
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #7221a1;
+    /* transition: 0.3 ease; */
+}
+#navbar li a:hover,
+#navbar li a.active {
+     color: #201dd6;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 17px;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Home page starts here */
+#room{
+    background-image: url(img/Sampleimgs/room.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 34% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#room h2{
+    padding-bottom: 15px;
+}
+
+#room h1{
+    color: #7221a1;
+}
+#room p{
+    /* color: #201dd6; */
+    color: rgb(154, 30, 165);
+    font-weight: bold;
+}
+
