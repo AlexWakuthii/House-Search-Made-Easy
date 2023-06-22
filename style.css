@@ -108,6 +108,26 @@ button.normal{
     left: 20px;
 }
 
+.welcome-text {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(25, 14, 173);
+    animation: moveLeft 10s linear infinite;
+    padding: 20px;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+  50% {
+        transform: translateX(-100%);
+    }
+    /* 100% {
+        transform: translateX(100%);
+    } */
+}
+
 /* Home page starts here */
 #room{
     background-image: url(img/Sampleimgs/room.jpg);
@@ -206,3 +226,14 @@ button.normal{
     background-color: #201dd6;
     color: #fff;
 }
+
+/* xxxxxxxxxxxxxxxx */
+ #testimonials h2{
+    text-align: center;
+    padding: 40px 22px;
+ }
+  
+
+  
+  
+  
