@@ -351,6 +351,8 @@ height: 70vh;
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    margin-top: 8px; /* Add a top margin */
+    margin-bottom: 16px;/* Bottom margin */
 }
   
 footer{
@@ -417,11 +419,11 @@ footer .copyright{
     text-align: center;
 }
 
-  /* About Page begins here */
-  #page-header{
+ /* About Page begins here */
+ #page-header{
     /* background-image: url("img/Sampleimgs/black\ banner.jpg"); */
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -429,7 +431,21 @@ footer .copyright{
     text-align: center;
     padding: 14px;
 }
-
+#History{
+    height: 50vh;
+    background-image: url("img/Sampleimgs/noti.jpg");
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* align-items: center;  */
+}
+#History, h2{
+    color:whitesmoke;
+}
+#History, p{
+    color: white;
+}
 #page-header h2,
 #page-header p{
     color: #201dd6;
@@ -457,15 +473,77 @@ background-color:none;
     text-align: center;
 }
 
-#about-app .video{
-    width: 70%;
-    height: 100%;
-    margin: 30px auto 0 auto;
-}
 
-#about-app .video video{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
+
+/* CONTACT PAGE STARTS HERE */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 50%; 
+    padding: 12px; 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 8px; /* Add a top margin */
+    margin-bottom: 16px;/* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally)  */
+   
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color:  #088178;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #201dd6;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(235, 227, 235);
+  }
+
+  /* Responsiveness for other Screens using Media Query Starts Here */
+
+@media only screen and (max-width:768px){
+    /* Home Page Mobile */
+    /* .section-house{
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0; */
+        /* right: -300px; */
+        #notification {
+           padding: 40px 20px;
+        }
+        #notification .form {
+            width: 100%;
+            padding-top: 20px;
+        }
+        #testimonials {
+    
+            height: 120vh;
+        }
+        footer {
+            
+  width: 100%;
+        }
+        }
+
+ 
 
